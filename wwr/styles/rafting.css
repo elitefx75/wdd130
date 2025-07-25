@@ -41,7 +41,24 @@ header {
   background-color: var(--primary-color);
 
   color: var(--accent2-color);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+  border-bottom: 4px solid var(--secondary-color);
 
+
+}
+
+nav {
+  display: flex;
+  gap: 2rem;
+  /* Adjust spacing between items */
+  list-style: none;
+  padding: 0;
+  margin: 0;
 }
 
 * {
@@ -244,4 +261,103 @@ section img {
   max-width: 400px;
   height: auto;
   object-fit: cover;
+}
+
+header img {
+  width: 60px;
+  /* Logo size */
+  height: auto;
+}
+
+figure {
+  border: thin #c0c0c0 solid;
+  display: flex;
+  flex-flow: column;
+  padding: 5px;
+  max-width: 220px;
+  margin: auto;
+
+}
+
+footer {
+  display: flex;
+  justify-content: flex-end;
+  /* aligns content to the right */
+  padding: 1rem 2rem;
+  background-color: #E42020;
+  /* consistent with header */
+}
+
+.footer-social {
+  display: flex;
+  gap: 1rem;
+  /* space between icons */
+}
+
+.footer-social img {
+  width: 32px;
+  height: 32px;
+}
+
+/* Style the section heading */
+.gallery h2 {
+  text-align: center;
+  font-size: 2em;
+  margin-bottom: 20px;
+  font-family: 'Roboto', sans-serif;
+
+}
+
+/* Horizontal flow of images */
+.image-row {
+  display: flex;
+  flex-wrap: nowrap;
+  /* Prevent wrapping to next line */
+  gap: 20px;
+  padding: 10px 20px;
+}
+
+/* Individual figure setup */
+.image-row figure {
+  flex: 0 0 auto;
+  width: 280px;
+  text-align: center;
+}
+
+.image-row img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  object-fit: cover;
+}
+
+.history-layout {
+  display: flex;
+  flex-direction: row;
+  /* Ensures horizontal layout */
+  align-items: flex-start;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+  /* Prevents elements from stacking unless forced */
+  gap: 20px;
+}
+
+.history-layout .left,
+.history-layout .right {
+  flex: 1 1 0;
+  min-width: 200px;
+  /* Prevents shrinking too small */
+}
+
+.history-layout .center img {
+  width: 280px;
+  height: auto;
+  object-fit: cover;
+  border-radius: 8px;
+  flex-shrink: 0;
+  /* Ensures image doesn’t collapse */
+}
+
+section h2 {
+  text-align: center;
 }
