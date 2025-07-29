@@ -165,7 +165,7 @@ figure {
   display: flex;
   flex-flow: column;
   padding: 5px;
-  max-width: 220px;
+  max-width: 150px;
   margin: auto;
 }
 
