@@ -269,3 +269,12 @@ section h2 {
   /* maintain aspect ratio */
   border-radius: 8px;
 }
+button {
+    margin: 1rem;
+    background-color: navy;
+    color: #fff;
+    border: none;
+    border-radius: .5rem;
+    padding: .75rem;
+    font-size: 1.2rem;
+}
