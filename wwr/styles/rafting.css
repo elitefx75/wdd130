@@ -373,3 +373,11 @@ th {
     font-weight: bold;
   }
 }
+.wrapper {
+  width: 100%;
+  box-sizing: border-box;
+}
+.container {
+  width: 90%;
+  padding: 1rem;
+}
