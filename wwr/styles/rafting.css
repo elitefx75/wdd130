@@ -3,8 +3,10 @@
   --secondary-color: #3BED5F;
   --accent1-color: #0a0908;
   --accent2-color: #e3fc76;
-  --heading-font: "Roboto condensed", sans-serif;;
-  --body-font: "open sans", sans-serif;;
+  --heading-font: "Roboto condensed", sans-serif;
+  ;
+  --body-font: "open sans", sans-serif;
+  ;
   --padding: 1rem;
 }
 
@@ -54,7 +56,7 @@ nav {
 body {
   font-family: var(--body-font);
   color: var(--accent1-color);
-  background-color: #fff;
+  ;
 }
 
 main {
@@ -152,9 +154,9 @@ article {
   height: 32px;
   margin: 0 8px;
 }
+
 section {
   padding: 2rem 1rem;
-  border-bottom: 1px solid #eee;
 }
 
 section img {
@@ -229,12 +231,14 @@ footer {
   border-radius: 8px;
   object-fit: cover;
 }
+
 .history-layout .left,
 .history-layout .right {
   flex: 1 1 0;
   min-width: 200px;
   /* Prevents shrinking too small */
 }
+
 .history-layout {
   display: flex;
   flex-direction: row;
@@ -301,8 +305,8 @@ section h2 {
 
 button {
   margin: 1rem;
-  background-color: navy;
-  color: #fff;
+  background-color: var(--primary-color);
+  color: var(--accent2-color);
   border: none;
   border-radius: .5rem;
   padding: .75rem;
@@ -339,7 +343,7 @@ button {
   height: auto;
   display: block;
   border-radius: 8px;
-  
+
 }
 
 .trip p,
@@ -369,8 +373,8 @@ td {
 }
 
 th {
-  background-color: #E42020;
-  color: #fff;
+  background-color: var(--primary-color);
+  color: var(--accent2-color);
   font-weight: bold;
 }
 
@@ -407,7 +411,8 @@ th {
   display: flex;
   justify-content: center;
   gap: 2rem;
-  flex-wrap: wrap; /* Allows wrapping on smaller screens */
+  flex-wrap: wrap;
+  /* Allows wrapping on smaller screens */
   padding: 1rem;
 }
 
@@ -430,7 +435,6 @@ th {
 .image-grid figcaption {
   margin-top: 0.5rem;
   font-size: 0.9rem;
-  color: #E42020;
-  
-}
+  color: var(--primary-color);
 
+}
